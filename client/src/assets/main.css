@@ -1,0 +1,8 @@
+/*Excess padding fix*/
+.w3-container .w3-panel .fixpad {
+	padding: 0.01em 8px;
+}
+
+.redC {
+	color: red
+}
