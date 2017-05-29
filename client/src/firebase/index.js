@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 import Rebase from 're-base';
 
-import { firebaseConfig as config } from '../../../config'
+import { firebaseConfig as config } from '../config'
 
 // Initialize Firebase
 firebase.initializeApp(config);
