@@ -30,8 +30,8 @@ var configure = (initialState = {}) => {
 		connectRouter(history)(reducer),
 		initialState,
 		compose(
-		applyMiddleware(thunk, routerMiddleware(history)),
-		window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // Enable Redux DevTools
+		applyMiddleware(routerMiddleware(history), thunk),
+		// window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // Enable Redux DevTools
 	))
 	return store;
 }
